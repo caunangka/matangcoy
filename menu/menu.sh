@@ -4,22 +4,6 @@ echo "Checking VPS"
 #########################
 
 # Color Validation
-GREEN='\033[0;32m'
-PURPLE='\033[0;35m'
-CYAN='\033[0;36m'
-NC='\033[0m'
-yl='\e[32;1m'
-bl='\e[36;1m'
-gl='\e[32;1m'
-rd='\e[31;1m'
-mg='\e[0;95m'
-blu='\e[34m'
-op='\e[35m'
-or='\033[1;33m'
-bd='\e[1m'
-color1='\e[031;1m'
-color2='\e[34;1m'
-color3='\e[0m'
 DF='\e[39m'
 Bold='\e[1m'
 Blink='\e[5m'
@@ -82,40 +66,31 @@ tram=$( free -m | awk 'NR==2 {print $2}' )
 uram=$( free -m | awk 'NR==2 {print $3}' )
 fram=$( free -m | awk 'NR==2 {print $4}' )
 clear 
-echo -e " "
-echo -e " "
-echo -e "\e[33m ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e " \e[0;100;33m        • DOA IBU Premium Script •           \e[0m"
-echo -e "\e[33m ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\e[33m ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "                ©DOA IBU LEBIH MUSTAJAB©                 "
+echo -e "\e[33m ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\e[33m ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "\e[33m Operating System     \e[0m:  "`hostnamectl | grep "Operating System" | cut -d ' ' -f5-`	
 echo -e "\e[33m Total Amount Of RAM  \e[0m:  $tram MB"
-echo -e "\e[33m Time Zone            \e[0m:  $WKT"
 echo -e "\e[33m System Uptime        \e[0m:  $uptime "
 echo -e "\e[33m Isp Name             \e[0m:  $ISP"
 echo -e "\e[33m Domain               \e[0m:  $domain"	
-echo -e "\e[33m Ip Vps               \e[0m:  $IPVPS"
-echo -e "${CYAN}════════════════════════════════════════════════════════════\033[0m${NC}"
-echo -e "\E[44;1;39m              ⇱ SCRIPT MENU ⇲                           \E[0m"
-echo -e "${CYAN}════════════════════════════════════════════════════════════\033[0m${NC}"
+echo -e "\e[33m Ip Vps               \e[0m:  $IPVPS"	
+echo -e "\e[33m ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "                 [ SCRIPT MENU ]                 "
+echo -e "\e[33m ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e " [\e[36m•1\e[0m] SSH & OpenVPN Menu  "
-echo -e " [\e[36m•2\e[0m] Vmess Menu          "
-echo -e " [\e[36m•3\e[0m] Vless Menu          "
-echo -e " [\e[36m•4\e[0m] Trojan-WS Menu      "
-echo -e " [\e[36m•5\e[0m] SSH UDP Menu        "
-echo -e " [\e[36m•6\e[0m] Trojan-GO Menu      "
-echo -e "${CYAN}════════════════════════════════════════════════════════════\033[0m${NC}"
-echo -e "${CYAN}════════════════════════════════════════════════════════════\033[0m${NC}"
-echo -e "$PURPLE (7) $NC GANTI DOMAIN         $PURPLE (15) $NC CEK BANDWITH "
-echo -e "$PURPLE (8) $NC RENEW CERTIFICATE    $PURPLE (16) $NC Clear RAM Cache "
-echo -e "$PURPLE (9) $NC CHANGE PORT          $PURPLE (17) $NC REBOOT VPS "
-echo -e "$PURPLE (10) $NC CHANGE BANNER       $PURPLE (18) $NC SPEEDTEST VPS "
-echo -e "$PURPLE (11) $NC BACKUP DATA VPS     $PURPLE (19) $NC Install UDP-Custom "
-echo -e "$PURPLE (12) $NC RESTORE DATA VPS    $PURPLE (20) $NC SET AUTO REBOT "
-echo -e "$PURPLE (13) $NC WEBMIN MENU         $PURPLE (21) $NC RESTARTS "
-echo -e "$PURPLE (14) $NC RUNNING SYSTEM      $PURPLE (22) $NC INFO SCRIPT "
-echo -e "\e[33m ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e " \e[0;100;33m        • AutoScript by DOA IBU •            \e[0m"
-echo -e "\e[33m ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e " [\e[36m•2\e[0m] Vmess Menu  "        
+echo -e " [\e[36m•3\e[0m] Vless Menu    "    
+echo -e " [\e[36m•4\e[0m] Trojan WS Menu "     
+echo -e " [\e[36m•5\e[0m] SYSTEM Menu"          
+echo -e " [\e[36m•6\e[0m] Status Service"       
+echo -e " [\e[36m•7\e[0m] Clear RAM Cache"
+echo -e " [\e[36m•8\e[0m] Trojan Go Menu" 
+echo -e "\e[33m ══════════════════════════════════════════════════\033[0m"
+echo -e "	SCRIPT PREMIUM BY DOA IBU    "
+echo -e "\e[33m ══════════════════════════════════════════════════\033[0m"
+echo -e   ""
 echo -e   " Press x or [ Ctrl+C ] • To-Exit-Script"
 echo -e   ""
 echo -e   ""
@@ -126,23 +101,9 @@ case $opt in
 2) clear ; menu-vmess ;;
 3) clear ; menu-vless ;;
 4) clear ; menu-trojan ;;
-5) clear ; udp ;;
-6) clear ; menu-trgo ;;
-7) clear ; add-host ;;
-8) clear ; certv2ray ;;
-9) clear ; port-change ;;
-10) clear ; nano /etc/issue.net ;;
-11) clear ; backup ;;
-12) clear ; restore ;;
-13) clear ; menu-webmin ;;
-14) clear ; running ;;
-15) clear ; bw ;;
-16) clear ; clearcache ;;
-17) clear ; reboot ;;
-18) clear ; speedtest ;;
-19) clear ; menus ;;
-20) clear ; auto-reboot ;;
-21) clear ; restart ;;
-22) clear ; about ;;
+5) clear ; menu-set ;;
+6) clear ; running ;;
+7) clear ; clearcache ;;
+8) clear ; menu-trgo ;;
 x) exit ;;
 esac
